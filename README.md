@@ -12,59 +12,51 @@ with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 * We will provide trained model and fine-tuned parameters after the research publication of this work will be accepted.
 
 
-INSTALLATION
+### INSTALLATION
 
 The codes have been tested with Python 3.6 and 3.7 versions on Debian based <br>
 linux distributions (Mint 19, Ubuntu 16). It is strongly recommended to install <br>
 Python libraries in a virtual environment.
 
 To install the required libraries run:<br>
-`<pip install -r requirements.txt>`
+`pip install -r requirements.txt`<br>
 
-To run the Jupyter notebooks, we recommend to install the libraries in a conda environment.
+To run the Jupyter notebooks, we recommend to install the libraries in a conda environment.<br>
+`conda env create -f ./notebooks/environment.yml`<br>
+`conda activate py37`<br>
+`python -m ipykernel install --user --name py37 --display-name "Python (py37)"`<br>
 
-`<conda env create -f ./notebooks/environment.yml>`
-`<conda activate py37>`
-`<python -m ipykernel install --user --name py37 --display-name "Python (py37)">`
 
+### USAGE
 
-USAGE
+See jupyter notebooks for a further explanation (link)<br>
 
-See jupyter notebooks for a further explanation (link)
+The codes assume the data is stored in this format:<br>
 
-The codes assume the data is stored in this format:
-
-. src
-    . Data
-        . Images
-            . Train_Images
-                . sample_0
+./src
+    ./Data
+        ./Images
+            ./Train_Images
+                ./sample_0
                     sample_0_data.png
                     sample_0_labels.png
-                . sample_1
+                ./sample_1
                     sample_1_data.png
                     sample_1_labels.png
-                . sample_2
+                ./sample_2
                     sample_2_data.png
-                    sample_2_labels.png            
-                ...
-                ...
-
-            . Validation_Images
-                . sample_0
+                    sample_2_labels.png                                
+            ./Validation_Images
+                ./sample_0
                     sample_0_data.png
                     sample_0_labels.png
-                . sample_1
+                ./sample_1
                     sample_1_data.png
                     sample_1_labels.png
-                . sample_2
+                ./sample_2
                     sample_2_data.png
                     sample_2_labels.png
-
-                ...
-                ...
-
-
+                    
 To train (calibrate) the model run
 python training.py
 
