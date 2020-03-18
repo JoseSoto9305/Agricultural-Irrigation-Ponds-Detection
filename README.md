@@ -1,13 +1,11 @@
-# Agricultural-Irrigation-Ponds-Detection
-Detects agricultural water reservoir
+# Agricultural Irrigation Ponds Detection
 
 
-Detects agricultural water reservoir or ponds with geomembrane lining mostly used in irrigation of crops 
-using [google map satellite imagery!](https://developers.google.com/maps/documentation/maps-static/intro)
-It uses a Fully Convolutional Network with ResNet50 as feature extractor.
-
-
-Our fine-tuned model detects irrigation ponds greater than 230 m² of size with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
+Detects agricultural water reservoir or ponds with geomembrane lining mostly <br>
+used in irrigation of crops <br> using [google map satellite imagery!](https://developers.google.com/maps/documentation/maps-static/intro) <br>
+It uses a Fully Convolutional Network with ResNet50 as feature extractor. <br>
+Our fine-tuned model detects irrigation ponds greater than 230 m² of size <br>
+with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 
 
 Imagen
