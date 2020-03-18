@@ -1,10 +1,5 @@
 # Agricultural Irrigation Ponds Detection
 
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
 Detects agricultural water reservoir or ponds with geomembrane lining <br>
 mostly used in irrigation of crops using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro) <br>
 It uses a Fully Convolutional Network with ResNet50 as feature extractor. <br>
@@ -37,19 +32,19 @@ See jupyter notebooks for a further explanation (link)<br>
 
 The codes assume the data is stored in this format:<br>
 
-./src
-    ./Data
-        ./Images
-            ./Train_Images
-                ./sample_0
-                    sample_0_data.png
-                    sample_0_labels.png
-                ./sample_1
-                    sample_1_data.png
-                    sample_1_labels.png
-                ./sample_2
-                    sample_2_data.png
-                    sample_2_labels.png                                
+./src<br>
+    ./Data<br>
+        ./Images<br>
+            ./Train_Images<br>
+                ./sample_0<br>
+                    sample_0_data.png<br>
+                    sample_0_labels.png<br>
+                ./sample_1<br>
+                    sample_1_data.png<br>
+                    sample_1_labels.png<br>
+                ./sample_2<br>
+                    sample_2_data.png<br>
+                    sample_2_labels.png<br>                              
             ./Validation_Images
                 ./sample_0
                     sample_0_data.png
