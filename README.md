@@ -1,5 +1,9 @@
 # Agricultural Irrigation Ponds Detection
 
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
 
 Detects agricultural water reservoir or ponds with geomembrane lining <br>
 mostly used in irrigation of crops using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro) <br>
