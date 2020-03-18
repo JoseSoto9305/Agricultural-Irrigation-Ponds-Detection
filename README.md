@@ -7,9 +7,12 @@ Our fine-tuned model detects irrigation ponds greater than 230 m² of size <br>
 with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 
 ![f2](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f2.png)
+
 *Irrigation water ponds:*<br>
 *left, frontal view (Credits:Soto-González J.T) ; right, aerial view Image (Credits:Google 2018)*
+
 ![f1](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f1.png)
+
 *Irrigation water ponds segmentation:* <br>
 *upper row: Google Map Satellite Imagery (Credits:Google 2018): bottom column: Segmentation output*
 
@@ -35,7 +38,7 @@ To run the Jupyter notebooks, we recommend to install the libraries in a conda e
 
 ### USAGE
 
-See [jupyter notebooks]() for a further explanation<br>
+See [jupyter notebooks](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/notebooks) for a further explanation<br>
 
 To train the model run:<br>
 `python training.py`<br>
@@ -51,7 +54,7 @@ an ESRI shapefile you can run:<br>
 `python polygons_extraction.py`<br>
 
 If you run evaluation.py or polygons_extraction.py,<br>
-you need a csv file with the center reference coordinate for each image:<br>
+you need a [csv file](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/Data/Images/Validation_Images) with the center reference coordinate for each image:<br>
 
 center_long | center_lat | filename 
 ----------- | ---------- | ---------
