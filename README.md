@@ -1,60 +1,78 @@
 # Agricultural Irrigation Ponds Detection
 
-Detects agricultural water reservoir or ponds with geomembrane lining, <br>
-mostly used in irrigation of crops using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro). <br>
-It uses a Fully Convolutional Network with ResNet50 as feature extractor. <br>
-Our fine-tuned model detects irrigation ponds greater than 230 m² of size <br>
-with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
-
-![f2](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f2.png)
+Detects agricultural water reservoir or ponds with geomembrane lining, mostly used in irrigation of crops using [google map 
+satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro). It uses a Fully Convolutional Network with ResNet50 as feature extractor. Our fine-tuned model detects 
+irrigation ponds greater than 230 m² of size with a F1 score of 0.91 (Recall=0.90, Precision=0.92).
 
 ![f1](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f1.png)
 
+![f2](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f2.png)
 
-We tested our trained model in the areas with the highest avocado production in Mexico. <br>
-The information provided by the neural network allowed the generation of a remote <br>
-sensing-based inventory of water ponds associated to avocado crop. See some of our results<br>
-in this [jupyter notebook](https://github.com/JoseSoto9305/Agricultural-Irrigation-ponds-Detection/blob/master/notebooks/Avocado_Related_Irrigation_Ponds.ipynb)
+We tested our trained model in the areas with the highest avocado production in Mexico (the green gold fringe at Michoacan 
+state). The information provided by the neural network allowed the generation of a remote sensing-based inventory of water 
+ponds associated to avocado crop. See some of our results in this [jupyter notebook](https://github.com/JoseSoto9305/Agricultural-Irrigation-ponds-Detection/blob/master/notebooks/Avocado_Related_Irrigation_Ponds.ipynb).
 
 ![f3](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f3.png)
 
 ![f4](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f4.png)
 
+<br> 
+
 * Because legal restrictions of the data sources, we can not provide the original training and validation sets.
 * We will provide trained model and fine-tuned parameters after the research publication of this work will be accepted.
 
+<br> 
+<br> 
 
 ### INSTALLATION
+
+<br> 
 
 The codes have been tested with Python 3.6 and 3.7 versions on Debian based <br>
 linux distributions (Mint 19, Ubuntu 16). It is strongly recommended to install <br>
 Python libraries in a virtual environment.
 
 To install the required libraries run:<br>
-`pip install -r requirements.txt`<br>
+```
+pip install -r requirements.txt
+```
 
 To run the Jupyter notebooks, we recommend to install the libraries in a conda environment.<br>
-`conda env create -f ./notebooks/environment.yml`<br>
-`conda activate py37`<br>
-`python -m ipykernel install --user --name py37 --display-name "Python (py37)"`<br>
+```
+conda env create -f ./notebooks/environment.yml
+conda activate py37
+python -m ipykernel install --user --name py37 --display-name "Python (py37)"
+```
 
+<br> 
+<br> 
 
 ### USAGE
+
+<br> 
 
 See [jupyter notebooks](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/notebooks) for a further explanation<br>
 
 To train the model run:<br>
-`python training.py`<br>
+```
+python training.py
+```
 
 To perform predictions with the validation set run:<br>
-`python predict.py`<br>
+```
+python predict.py
+```
 
 Then, to evaluate the performance of the model run:<br>
-`python evaluation.py`<br>
+```
+python evaluation.py
+```
 
 If you want to export the predicted segmentations masks to<br>
 an ESRI shapefile you can run:<br>
-`python polygons_extraction.py`<br>
+```
+python polygons_extraction.py
+```
 
 If you run evaluation.py or polygons_extraction.py,<br>
 you need a [csv file](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/Data/Images/Validation_Images) with the center reference coordinate for each image:<br>
