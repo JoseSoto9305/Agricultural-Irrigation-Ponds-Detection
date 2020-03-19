@@ -11,8 +11,6 @@ with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 
 ![f1](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f1.png)
 
-*Irrigation water ponds segmentation:* <br>
-*upper row: Google Map Satellite Imagery (Credits:Google 2018): bottom column: Segmentation output*
 
 
 * Because legal restrictions of the data sources, we can not provide the original training and validation sets.
