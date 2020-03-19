@@ -1,7 +1,7 @@
 # Agricultural Irrigation Ponds Detection
 
-Detects agricultural water reservoir or ponds with geomembrane lining <br>
-mostly used in irrigation of crops using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro) <br>
+Detects agricultural water reservoir or ponds with geomembrane lining, <br>
+mostly used in irrigation of crops using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro). <br>
 It uses a Fully Convolutional Network with ResNet50 as feature extractor. <br>
 Our fine-tuned model detects irrigation ponds greater than 230 m² of size <br>
 with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
@@ -11,8 +11,10 @@ with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 ![f1](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f1.png)
 
 
-We use our trained model to generate an avocado-related agrigultural irrigation ponds
-at Michoacan's green gold fringe, see our results in the [jupyter notebook](https://github.com/JoseSoto9305/Agricultural-Irrigation-ponds-Detection/blob/master/notebooks/Avocado_Related_Irrigation_Ponds.ipynb)
+We tested our trained model in the areas with the highest avocado production in Mexico. <br>
+The information provided by the neural network allowed the generation of a remote <br>
+sensing-based inventory of water ponds associated to avocado crop. See some of our results<br>
+in this [jupyter notebook](https://github.com/JoseSoto9305/Agricultural-Irrigation-ponds-Detection/blob/master/notebooks/Avocado_Related_Irrigation_Ponds.ipynb)
 
 ![f3](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f3.png)
 
