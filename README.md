@@ -6,7 +6,6 @@ It uses a Fully Convolutional Network with ResNet50 as feature extractor. <br>
 Our fine-tuned model detects irrigation ponds greater than 230 m² of size <br>
 with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 
-
 ![f2](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f2.png)
 
 ![f1](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/blob/master/Images/f1.png)
