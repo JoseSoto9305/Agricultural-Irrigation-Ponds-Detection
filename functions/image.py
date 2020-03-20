@@ -72,7 +72,7 @@ from skimage.exposure import adjust_gamma
 def cropping(im, crop_size=20):
     '''
     Crop image, apply the size 
-    along each image border
+    along each image border.
     '''
     return im[crop_size:im.shape[0]-crop_size, 
               crop_size:im.shape[1]-crop_size]
