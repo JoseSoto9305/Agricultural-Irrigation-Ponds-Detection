@@ -15,7 +15,7 @@ __maintainer__ = 'Jose Trinidad Soto Gonzalez'
 ./functions/georeferencing_polygons.py
 
 
-Functions to extract, and georeferencing polygons in an image
+Functions to extract and georeferencing polygons in an image
 
 
 Defined classes:
@@ -76,7 +76,7 @@ sns.set_style('darkgrid')
 class ImageGeoreferencer(BaseImage):
 
     '''
-    Parent class for georeferencing Google Map Satellite Imagery
+    Parent class for georeferencing Google Map Satellite Imagery.
     See ./georeferencing_polygons for a further implementation.
     '''    
 
@@ -92,7 +92,7 @@ class ImageGeoreferencer(BaseImage):
         # Image dimentions
         self.h, self.w, _ = self._image_dim(im)
         
-        # Image center coordinate in long, lat:
+        # Image center coordinate in (long, lat):
         self.center = gpd.GeoSeries([Point(center)], crs={'init':'epsg:4326'})
 
         # Image zoom
@@ -169,7 +169,7 @@ class ImageGeoreferencer(BaseImage):
 class PolygonsExtractor(ImageGeoreferencer):
     
     '''
-    Class for extract polygons in an image
+    Class for extract polygons in an image.
     See ./polygons_extractor.py or ./evaluation.py for a further implementation.
     '''    
 
@@ -218,7 +218,7 @@ class PolygonsExtractor(ImageGeoreferencer):
     
     def _labels(self, im):
         self.labels = label(im)
-        # Omit background labels
+        # Omit background
         self.polygons_index = [i for i in np.unique(self.labels) if not i == 0]
         return self.labels, self.polygons_index
 
@@ -265,8 +265,8 @@ class PolygonsExtractor(ImageGeoreferencer):
         Shows the extracted polygons        
         '''
 
-        # Polygons are saved in long-lat coordinate system, 
-        # Convert image corners to long-lat coordinate system
+        # Polygons are saved in (long,lat) coordinate system, 
+        # Convert image corners to (long,lat) coordinate system
         crs = {'init':'epsg:4326'}
 
         corners = gpd.GeoSeries([Polygon(self.corners)])
@@ -293,7 +293,7 @@ class PolygonsExtractor(ImageGeoreferencer):
 
     def polygons2geopandas(self):
         '''
-        Converts the polygons_dict to a geopandas dataframe
+        Converts the polygons_dict to a geopandas dataframe.
             ** Retrives the geopandas dataframe in epsg 4326 proyection
         '''        
         crs = {'init':'epsg:4326'}
