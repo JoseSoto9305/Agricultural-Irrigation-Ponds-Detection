@@ -98,7 +98,7 @@ def f1_score(recall, precision):
 
 def find_best_thr_decision(recall, precision):
     '''
-    Finds best threshold decision for precision-recall curve
+    Finds the best threshold decision for a precision-recall curve.
     '''
     opt = (1,1)
     dist = np.sqrt((recall - opt[0])**2 + (precision - opt[1])**2)
@@ -114,8 +114,8 @@ def prediction_metrics(ground_truth, prediction):
         false positive indexes; 
         false negative indexes; 
         dice coefficient;
-        displacement error between centroid of ground truth 
-                     and centroid of the predicted polygon
+        displacement error between the centroid of ground truth 
+            and the centroid of the predicted polygon.
 
     '''
 
@@ -127,7 +127,7 @@ def prediction_metrics(ground_truth, prediction):
     pred['Roi_ID'] = range(prediction.shape[0])
 
     # The gpd.overlay function returns an error if there is not any
-    # match beetwen the two goepandas dataframes. This lines are from
+    # match between the two goepandas dataframes. This lines are from
     # the gpd.overlay function, and then we used the _overlay_intersection function
     gt[gt._geometry_column_name] = gt.geometry.buffer(0)
     pred[pred._geometry_column_name] = pred.geometry.buffer(0)
@@ -149,7 +149,7 @@ def prediction_metrics(ground_truth, prediction):
         # This line is also from the gpd.overlay function
         res_inter.drop(['__idx1', '__idx2'], axis=1, inplace=True)   
 
-        # Overlapping indexes in prediction and ground truth
+        # Overlapping indexes
         ids_pred = res_inter.Roi_ID_1.values
         ids_gt = res_inter.Roi_ID_2.values
 
