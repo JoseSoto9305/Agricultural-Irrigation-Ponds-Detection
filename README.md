@@ -31,8 +31,8 @@ ponds associated with the avocado crop. See some of our results in this [jupyter
 ### INSTALLATION
 
 <br> 
-
-The codes need the following third-party libraries:<br>
+The codes have been tested with Python 3.6 and 3.7 versions on Debian based linux distributions (Mint 19, Ubuntu 16).
+You will need the following third-party libraries:<br>
 
 * numpy
 * pandas
