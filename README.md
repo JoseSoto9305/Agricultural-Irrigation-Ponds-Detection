@@ -29,7 +29,7 @@ ponds associated with the avocado crop. See some of our results in this [jupyter
 
 * Because the legal restrictions of the data sources, we can not provide the original training and validation sets.
 * We will provide trained model and fine-tuned parameters after the research publication of this work will be accepted.
-* Michoacán's avocado fringe is taken from:
+* Michoacán's avocado fringe is taken from:<br>
   Morales, L.M.M. and G. Cuevas, G. (2012). Inventario 2011 y evaluación del impacto ambiental forestal del cultivo del 
   aguacate en el estado de Michoacán. Informe Ejecutivo. Centro de Investigaciones en Geografía Ambiental, UNAM. 
   Morelia, MICH. 10 pp.
