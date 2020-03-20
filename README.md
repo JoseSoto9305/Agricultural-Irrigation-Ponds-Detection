@@ -88,7 +88,7 @@ If you want to export the predicted segmentations masks to an ESRI shapefile you
 python polygons_extraction.py
 ```
 
-If you run evaluation.py or polygons_extraction.py,you need a [csv file](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/Data/Images/Validation_Images) with the center reference coordinate for each image:<br>
+If you run **evaluation.py** or **polygons_extraction.py**, you need a [csv file](https://github.com/JoseSoto9305/Agricultural-Irrigation-Ponds-Detection/tree/master/Data/Images/Validation_Images) with the center reference coordinate for each image:<br>
 
 center_long | center_lat | filename 
 ----------- | ---------- | ---------
