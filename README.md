@@ -102,5 +102,11 @@ center_long | center_lat | filename
 -101.20 | 19.65 | sample_n_data.png
 
 
-If it is useful for your work, please cite us as:
+---
+
+### Reference
+
+<br> 
+
+If it is useful for your work, please cite us as:<br>
     CITA
