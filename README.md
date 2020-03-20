@@ -2,6 +2,8 @@
 
 ### Description
 
+<br>
+
 Detects agricultural water reservoir or ponds with geomembrane lining using [google map satellite imagery](https://developers.google.com/maps/documentation/maps-static/intro). 
 It uses a Fully Convolutional Network with ResNet50 as a feature extractor. Our fine-tuned model detects 
 irrigation ponds greater than 230 m² of size with an F1 score of 0.91 (Recall=0.90, Precision=0.92).
@@ -12,6 +14,8 @@ irrigation ponds greater than 230 m² of size with an F1 score of 0.91 (Recall=0
 
 
 ### A Case Of Study
+
+<br>
 
 We tested our trained model in the areas with the highest avocado production in Mexico (the green gold fringe at Michoacan 
 state). The information provided by the neural network allowed the generation of a remote sensing-based inventory of water 
@@ -31,6 +35,7 @@ ponds associated with the avocado crop. See some of our results in this [jupyter
 ### INSTALLATION
 
 <br> 
+
 The codes have been tested with Python 3.6 and 3.7 versions on Debian based linux distributions (Mint 19, Ubuntu 16).<br>
 <br> 
 You will need the following third-party libraries:<br>
