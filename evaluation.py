@@ -18,7 +18,7 @@ Evaluates the performances of the trained model:
 First extracts the validation and prediction polygons.
 Then, builds the precision-recall curve and retrives the best performance.
 
-Our fine-tuned model detects irrigation ponds greater than 230 m² of
+Our fine-tuned model detects irrigation ponds greater than 230 m² of size
 with a F1 score of 0.91 (Recall=0.90, Precision=0.92)
 
 Metrics used:
